@@ -4,8 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: firebrick ;
+        }
+        
+        section{
+            width: 30rem;
+            height: 15rem;
+            background:black;
+            position: relative;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 10% auto;
+        }
+        img{
+            
+        }
+        .img1{
+            position: absolute;
+            margin-top: 1rem;
+        }
+        span{
+            position: absolute;
+            color: rgb(178, 178, 20);
+            margin-top: 1.2rem;
+            margin-left: 1rem;
+            
+        }
+        
+        .span{
+            position: absolute;
+            margin-top: 2.2rem;
+        }
+        p{
+            position: absolute;
+            margin-top: 5rem;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: rgb(178, 178, 20) ;
+        }
+        .b{
+            position: absolute;
+            margin-top: 1rem ;
+            left: 5rem;
+        }
+        h1{
+            color: rgb(178, 178, 20) ;   
+            position: absolute;
+            top: 13rem;
+        }
+        .humo{
+            position: absolute;
+            left: 23rem;
+            top: 11.7rem;
+        }
+        section:active{
+            transition: all 1s ease-out;
+            background-color: rgb(18, 182, 211);
+            
+        }
+        section:hover{
+            transition: all 1s ease-out;
+            width: 25rem;
+            height: 15rem;
+            box-shadow: 16px 8px 8px gold;
+            .humo{
+            transition: all 1s ease-out;
+                margin-left: -3.3rem;
+            }
+            p{
+            transition: all 1s ease-out;
+                font-size: 2rem;
+            }
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <section >
+        <div><img width="8%" height="10%" src="./photo_2025-03-01_17-42-08.jpg" alt=""><span>NATIONAL</span><span class="span">BANK OF UZBAKISTAN</span></div>
+        
+        <img class="img1" src="./chip.png" width="13%" height="22%" alt=""><img class="b" src="./qur.jpg" width="16%" height="22%" alt="">
+        <div><p>9860 **** **** **95</p></div>
+        <div ><h1 >SAIDOV BEKJON</h1> <img class="humo" src="./humo.png" width="20%" height="20%" alt=""></div>
+    </section>
     <script src="./script.js"></script>
 </body>
 </html>
